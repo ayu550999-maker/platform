@@ -7,6 +7,4 @@ import SvgIcon from '@/components/SvgIcon/index.vue'
     <svg-icon name="loading"></svg-icon>
   </div>
 </template>
-<style scoped lang="scss">
-</style>
-
+<style scoped lang="scss"></style>
