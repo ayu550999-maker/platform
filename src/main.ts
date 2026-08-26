@@ -14,14 +14,5 @@ import 'virtual:svg-icons-register'
 import gloablComponent from '@/components/index'
 import '@/styles/index.sass'
 
-import axios from 'axios'
-axios({
-  url: '/api/user/login',
-  method: 'post',
-  data: {
-    username: 'admin',
-    password: '111111',
-  },
-})
 app.use(gloablComponent)
 app.mount('#app')
