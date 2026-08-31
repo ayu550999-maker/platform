@@ -7,9 +7,6 @@ onMounted(() => {
 })
 </script>
 <template>
-  <div>
-    <div>app根组件</div>
-    <svg-icon name="loading"></svg-icon>
-  </div>
+  <router-view />
 </template>
 <style scoped lang="scss"></style>
