@@ -3,6 +3,8 @@ import App from '@/App.vue'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 import router from '@/router'
+import { createPinia } from 'pinia'
+
 // @ts-ignore
 import 'virtual:svg-icons-register'
 import gloablComponent from '@/components/index'
@@ -17,4 +19,6 @@ app.use(ElementPlus, {
 
 app.use(gloablComponent)
 app.use(router)
+app.use(createPinia())
+
 app.mount('#app')
