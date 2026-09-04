@@ -1,26 +1,19 @@
 <template>
   <div class="layout_container">
     <!-- 左侧菜单 -->
-    <div class="layout_slider">
-123
-    </div>
+    <div class="layout_slider">123</div>
     <!-- 顶部导航 -->
-    <div class="layout_tabbar" >
-456
-    </div>
+    <div class="layout_tabbar">456</div>
     <!-- 内容展示区域 -->
-    <div class="layout_main" >
-     789
-    </div>
+    <div class="layout_main">789</div>
   </div>
 </template>
 
 <style scoped lang="scss">
 .layout_container {
   width: 100%;
-  height: 100vh;Ï
-
-  .layout_slider {
+  height: 100vh;
+  Ï .layout_slider {
     color: white;
     width: $base-menu-width;
     height: 100vh;
@@ -45,7 +38,7 @@
     left: $base-menu-width;
     transition: all 0.3s;
     &.fold {
-      width: calc(100vw - $base-menu-min-width );
+      width: calc(100vw - $base-menu-min-width);
       left: $base-menu-min-width;
     }
   }
@@ -61,10 +54,9 @@
     transition: all 0.3s;
 
     &.fold {
-      width: calc(100vw - $base-menu-min-width );
+      width: calc(100vw - $base-menu-min-width);
       left: $base-menu-min-width;
     }
-
   }
 }
 </style>
