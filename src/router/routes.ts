@@ -14,7 +14,7 @@ export const constantRoute = [
   {
     //登录成功以后展示数据的路由
     path: '/',
-    component: () => import('@/views/layout/index.vue'),
+    component: () => import('@/layout/index.vue'),
     name: 'layout',
     meta: {
       title: '',
