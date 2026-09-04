@@ -10,6 +10,7 @@ let useUserStore = defineStore('User', {
   },
   // 处理业务逻辑
   actions: {
+    // 用户登录
     async userlogin(data: loginFormData) {
       const res = await userAPI.reqLogin(data)
       if (res.code === 200) {
