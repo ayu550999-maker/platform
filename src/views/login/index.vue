@@ -4,7 +4,12 @@
       <el-col :span="12" :xs="0"></el-col>
       <el-col :span="12" :xs="24">
         <!-- 登录的表单 -->
-        <el-form class="login_form" ref="loginForms" :model="loginForm" :rules="loginRules">
+        <el-form
+          class="login_form"
+          ref="loginForms"
+          :model="loginForm"
+          :rules="loginRules"
+        >
           <h1>Hello</h1>
           <h2>欢迎来到硅谷甄选</h2>
           <el-form-item prop="username">
@@ -63,7 +68,6 @@ const loginForm = reactive({
 // 登录的表单数据验证规则
 const loginForms = ref()
 
-
 // 登录的表单规则
 const loginRules = {
   username: [
@@ -82,10 +86,7 @@ const login = async () => {
   try {
     await loginForms.value.validate()
   } catch (error: any) {
-    const errors = error as Record<
-        string,
-        { message: string; field: string }[]
-    >
+    const errors = error as Record<string, { message: string; field: string }[]>
     const message = Object.values(errors)[0]?.[0]?.message || '请检查表单信息'
 
     ElNotification({
