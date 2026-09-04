@@ -44,7 +44,7 @@ import { reactive, ref } from 'vue'
 import useUserStore from '@/store/modules/user'
 import { useRouter } from 'vue-router'
 import { ElNotification } from 'element-plus'
-import {getTime} from "@/utils/time.ts";
+import { getTime } from '@/utils/time.ts'
 
 // 加载状态
 const loading = ref(false)
